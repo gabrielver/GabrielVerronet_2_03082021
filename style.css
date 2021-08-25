@@ -79,26 +79,43 @@ input {
 }
 
 .Filtres {
+  font-size: 18px;
   padding: 2rem 0rem;
   grid-column: 1/4;
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
 }
 
 .Filtres ul {
-  font-size: 18px;
-
   display: flex;
-  justify-content: space-evenly;
-  width: 50%;
+  justify-content: space-between;
+  padding-right: 30rem;
   list-style: none;
   font-weight: bold;
-  padding-right: 15rem;
 }
 
-.Filtre a {
+.Filtres li {
+  padding: 0.5rem 1rem;
+}
+
+.Filtres p {
+  background: crimson;
+  padding-left: 0.75rem;
+  padding: 0.5rem 1.5rem 0.5rem 0rem;
+  border-radius: 0px 25px 25px 0px;
+}
+
+.Filtres i {
+  color: #0065fc;
+  background: #6fa8ff;
+  border-radius: 25px 25px 25px 25px;
+  border-color: #0065fc;
+  padding: 0rem 0rem 0rem 0.5rem;
+  display: flex;
+}
+
+.Filtres a {
   text-decoration: none;
 }
 
