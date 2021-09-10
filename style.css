@@ -250,7 +250,7 @@ input {
 
 .plus-populaire h1 {
   font-size: 22px;
-  padding: 1rem 0rem;
+  padding: 1rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -262,7 +262,7 @@ input {
   display: flex;
   align-items: center;
   object-fit: cover;
-  height: 140px;
+  height: 148px;
 }
 
 .plus-populaire .d1,
@@ -308,7 +308,7 @@ input {
 }
 
 .rating {
-  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .rating1 {
@@ -321,7 +321,7 @@ input {
   padding-bottom: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 60px 1fr 1fr;
+  grid-template-rows: 60px 240px 240px;
 }
 
 .activite h1 {
@@ -329,13 +329,6 @@ input {
   grid-column: 1/5;
   font-size: 20px;
   padding: 1rem 1rem;
-}
-.activite img {
-  width: 100%;
-  border-radius: 25px 25px 0px 0px;
-  display: flex;
-  align-items: center;
-  object-fit: cover;
 }
 
 .activite a {
@@ -345,12 +338,29 @@ input {
   text-decoration: none;
   font-size: 12px;
   color: black;
+  background-color: lightgreen;
+  display: grid;
+  grid-template-rows: 1fr 40px;
+  object-fit: cover;
 }
-.activite h2 {
+
+.activite img {
+  width: 100%;
+  border-radius: 25px 25px 0px 0px;
+  display: flex;
+  align-items: center;
+  object-fit: cover;
+}
+
+.activite .e2 img {
+  max-height: 160px;
+}
+.activite .h2 {
+  padding-bottom: auto;
   padding: 0.25rem 0.25rem 0.25rem 0.5rem;
 }
 
-.activite .e1 {
+.e1 {
   display: grid;
   grid-column: 1/2;
   grid-row: 2/4;
@@ -359,7 +369,8 @@ input {
 .activite .e2 {
   display: grid;
   grid-column: 2/3;
-  grid-row: 2/3;
+  grid-row: 2/4;
+  height: 220px;
 }
 
 .activite .e3 {
@@ -394,11 +405,6 @@ input {
   height: 200px;
   padding: 2rem;
   margin: 3rem 0rem;
-}
-
-.footer .f1,
-.f2,
-.f3 {
 }
 
 .footer h1 {
