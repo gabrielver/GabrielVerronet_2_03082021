@@ -47,6 +47,10 @@ nav a {
   text-decoration: none;
 }
 
+nav .S {
+  font-weight: bold;
+}
+
 nav a:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
@@ -149,7 +153,6 @@ input {
 .Filtres p {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  font: bolder;
 }
 
 .Filtres a {
@@ -287,7 +290,6 @@ input {
 }
 .plus-populaire .texte {
   margin-left: 1rem;
-  grid-template-columns: 2/3;
   height: 100%;
 }
 
