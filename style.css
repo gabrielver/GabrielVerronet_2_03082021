@@ -42,8 +42,14 @@ nav ul {
 }
 
 nav a {
+  display: block;
   color: black;
   text-decoration: none;
+}
+
+nav a:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
 }
 
 .titre {
@@ -70,26 +76,27 @@ form i {
   height: 40px;
   width: 40px;
   background: #f2f2f2;
-  border-radius: 25px 0 0 25px;
+  border-radius: 8px 0 0 8px;
   display: flex;
   text-align: center;
   padding: 0.7rem 0.5rem;
 }
 
-button {
+form button {
   color: white;
   font-weight: bold;
   background: #0065fc;
   border: none;
-  border-radius: 0 20px 20px 0;
-  width: 80px;
+  border-radius: 0 8px 8px 0;
+  width: 100px;
   height: 40px;
 }
 
 input {
   width: 170px;
   height: 40px;
-  color: #f2f2f2;
+  border: none;
+  display: flex;
 }
 
 .Filtres {
@@ -106,34 +113,43 @@ input {
 .Filtres ul {
   display: flex;
   justify-content: space-between;
-  padding-right: 30rem;
+  padding-right: 45rem;
   list-style: none;
-  font-weight: bold;
 }
 
 .Filtres li {
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem;
+}
+
+.Filtres .circle-icon {
+  color: #386ffc;
+  background: #deecff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+.Filtres button {
+  background: white;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  border: 1px solid lightgray;
+  padding-right: 0.25rem;
+  transition-duration: 0.5s;
+}
+
+.Filtres button:hover {
+  background-color: #deecff;
 }
 
 .Filtres p {
-  background: white;
-  color: black;
-  padding-left: 0.75rem;
-  padding: 0.5rem 1.5rem 0.5rem 0rem;
-  border-radius: 0px 25px 25px 0px;
-  border: solid;
-  border-color: #f2f2f2;
-  display: flex;
-  justify-content: center;
-}
-
-.Filtres i {
-  color: #0065fc;
-  background: #6fa8ff;
-  border-radius: 25px 25px 25px 25px;
-  padding: 0rem 0rem 0rem 0.5rem;
-  display: flex;
-  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font: bolder;
 }
 
 .Filtres a {
@@ -142,15 +158,28 @@ input {
 
 .info-recherche {
   display: flex;
+  align-items: center;
   color: #7a7a7afd;
   grid-column: 1/4;
-  padding: 1.5rem 0rem;
-  margin: 0rem 0rem 0rem 0.25rem;
+  padding-bottom: 1.5rem;
+  margin: 0rem 0rem 0rem 0.5rem;
 }
 
-.info-recherche i {
+.info-recherche .circle-icon {
   background: none;
   color: #0065fc;
+  border: 1px solid lightgray;
+  font-size: 9px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.info-recherche p {
+  padding-left: 0.5rem;
 }
 
 .hebergement {
@@ -179,12 +208,7 @@ input {
   object-fit: cover;
 }
 
-.hebergement .c1,
-.c2,
-.c3,
-.c4,
-.c5,
-.c6 {
+.hebergement .c1 {
   padding: 0.35rem;
   background: white;
   border: black;
@@ -219,7 +243,6 @@ input {
   grid-column: 3/4;
   border-radius: 25px 25px 25px 25px;
   margin: 0rem 1rem 0rem 1rem;
-
   display: grid;
   grid-template-rows: 60px 1fr 1fr 1fr;
   grid-template-columns: 1fr;
@@ -227,7 +250,7 @@ input {
 
 .plus-populaire h1 {
   font-size: 22px;
-  padding: 1rem 1rem;
+  padding: 1rem 0rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -239,7 +262,7 @@ input {
   display: flex;
   align-items: center;
   object-fit: cover;
-  height: 100%;
+  height: 140px;
 }
 
 .plus-populaire .d1,
@@ -253,11 +276,12 @@ input {
   border-radius: 25px 25px 25px 25px;
   width: 90%;
   display: flex;
+  height: 160px;
 }
 .plus-populaire .texte {
-  margin: 1rem 0rem 0rem 1rem;
-
+  margin-left: 1rem;
   grid-template-columns: 2/3;
+  height: 100%;
 }
 
 .plus-populaire h2 {
@@ -275,12 +299,20 @@ input {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
+  height: 100%;
 }
 
 .plus-populaire i {
   color: #0065fc;
-
   background: none;
+}
+
+.rating {
+  margin-top: auto;
+}
+
+.rating1 {
+  padding-left: 0.4rem;
 }
 
 .activite {
@@ -387,8 +419,4 @@ input {
 
 .footer li {
   padding: 0.25rem;
-}
-
-.rating {
-  margin-top: 75%;
 }
