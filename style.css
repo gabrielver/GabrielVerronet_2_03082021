@@ -116,8 +116,7 @@ input {
 
 .Filtres ul {
   display: flex;
-  justify-content: space-between;
-  padding-right: 43rem;
+  flex: 1;
   list-style: none;
 }
 
@@ -205,7 +204,8 @@ input {
 
 .hebergement img {
   width: 100%;
-  max-height: 145px;
+  height: 145px;
+  min-width: 202px;
   border-radius: 25px 25px 0 0;
   display: flex;
   align-items: center;
@@ -214,12 +214,14 @@ input {
 
 .hebergement .c1 {
   padding: 0.35rem;
+  margin: 1rem;
+  height: 90%;
   background: white;
   border: black;
-  border-radius: 25px 25px 25px 25px;
+  border-radius: 25px;
   box-shadow: 2.5px 0px 10px 2.5px rgb(212, 212, 212);
-  width: 90%;
-  height: 90%;
+  display: flex;
+  flex-direction: column;
 }
 
 .hebergement h2 {
@@ -246,6 +248,11 @@ input {
 .hebergement .plus a {
   color: black;
   padding-left: 1rem;
+  margin: 1rem;
+}
+.hebergement .plus {
+  padding-top: 1rem;
+  font-weight: bold;
 }
 
 .plus-populaire {
@@ -286,7 +293,8 @@ input {
   border-radius: 25px 25px 25px 25px;
   width: 90%;
   display: flex;
-  height: 160px;
+  flex-direction: row;
+  position: relative;
 }
 .plus-populaire .texte {
   margin-left: 1rem;
@@ -309,7 +317,6 @@ input {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
-  height: 100%;
 }
 
 .plus-populaire i {
@@ -318,8 +325,8 @@ input {
 }
 
 .rating {
-  margin-bottom: auto;
-  padding-top: 4rem;
+  position: absolute;
+  bottom: 15px;
 }
 
 .rating1 {
@@ -349,10 +356,8 @@ input {
   text-decoration: none;
   font-size: 12px;
   color: black;
-
-  display: grid;
-  grid-template-rows: 1fr 40px;
-  object-fit: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .activite img {
@@ -377,7 +382,7 @@ input {
 }
 
 .e1 img {
-  height: 99%;
+  height: 90%;
 }
 
 .activite .e2 {
@@ -403,7 +408,7 @@ input {
 }
 
 .e4 img {
-  height: 99%;
+  height: 90%;
 }
 
 .activite .e5 {
@@ -455,4 +460,58 @@ input {
 
 .footer li {
   padding: 0.25rem 0.25rem 0.25rem 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 70%;
+  }
+  .logo {
+    flex: 1;
+  }
+
+  body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .Filtres .a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hebergement {
+    grid-row: 7/8;
+    grid-column: 2/3;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: none;
+  }
+
+  .hebergement .img {
+    height: 100%;
+    min-height: 145px;
+    display: flex;
+    object-fit: contain;
+  }
+
+  .plus-populaire {
+    grid-row: 6/7;
+    grid-column: 2/3;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    border-radius: 0rem;
+  }
+
+  .activite {
+    display: flex;
+    flex-direction: column;
+  }
 }
