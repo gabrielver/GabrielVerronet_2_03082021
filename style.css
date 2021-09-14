@@ -47,11 +47,17 @@ nav a {
   text-decoration: none;
 }
 
+nav .menu{
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 0rem 2.5rem;
+}
 nav .S {
   font-weight: bold;
 }
 
-nav a:hover {
+nav .menu a:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
 }
@@ -468,15 +474,28 @@ input {
   }
   .logo {
     flex: 1;
+    object-fit: cover;
   }
 
   nav {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding: 1rem 0rem;
   }
 
-  nav ul .inscription {
+  nav .menu{
+    padding: 0;
+    grid-row: 2/3;
+  }
+  nav a.h{
+    grid-row: 2/3;
+  }
+
+  nav a.S {
     grid-row: 1/2;
+    grid-column: 2/3;
   }
 
   body {
@@ -484,6 +503,7 @@ input {
     display: grid;
     grid-template-columns: 10px 1fr 10px;
   }
+
   .titre {
     padding: 0.5rem 4rem;
   }
@@ -500,6 +520,7 @@ input {
   .Filtres p1 {
     padding-left: 1.5rem;
   }
+  
   .Filtres ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -549,7 +570,8 @@ input {
     padding-left: 0rem;
     border-radius: 0rem;
   }
-
+  
+  }
   .activite {
     display: flex;
     flex-direction: column;
