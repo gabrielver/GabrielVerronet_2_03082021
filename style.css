@@ -47,7 +47,7 @@ nav a {
   text-decoration: none;
 }
 
-nav .menu{
+nav .menu {
   display: flex;
   justify-content: space-between;
   flex: 1;
@@ -485,11 +485,11 @@ input {
     padding: 1rem 0rem;
   }
 
-  nav .menu{
+  nav .menu {
     padding: 0;
     grid-row: 2/3;
   }
-  nav a.h{
+  nav a.h {
     grid-row: 2/3;
   }
 
@@ -520,7 +520,7 @@ input {
   .Filtres p1 {
     padding-left: 1.5rem;
   }
-  
+
   .Filtres ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -570,8 +570,7 @@ input {
     padding-left: 0rem;
     border-radius: 0rem;
   }
-  
-  }
+
   .activite {
     display: flex;
     flex-direction: column;
