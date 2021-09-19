@@ -477,7 +477,7 @@ input {
   padding: 0.25rem 0.25rem 0.25rem 1rem;
 }
 
-@media screen and (max-width: 1215px) {
+@media only screen and (max-width: 1215px) {
   body {
     height: 100vh;
     display: grid;
@@ -528,7 +528,7 @@ input {
     max-height: 175px;
   }
 }
-@media screen and (max-width: 670px) {
+@media only screen and (max-width: 670px) {
   .hebergement img {
     min-width: 165px;
     max-height: 130px;
@@ -538,7 +538,7 @@ input {
     padding: 0rem 0.5rem;
   }
 }
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) and (min-width: 150px) {
   html {
     font-size: 80%;
   }
@@ -649,6 +649,7 @@ input {
 
   .hebergement .img {
     min-height: 145px;
+    width: none;
     display: flex;
     object-fit: contain;
   }
