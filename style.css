@@ -56,6 +56,7 @@ nav .menu {
 }
 nav .S {
   font-weight: bold;
+  padding-right: 0rem;
 }
 
 nav .menu a:hover {
@@ -488,6 +489,11 @@ input {
     padding-top: 1rem;
   }
 
+  .hebergement img {
+    max-width: 165px;
+    max-height: 130px;
+  }
+
   .plus-populaire {
     grid-row: 7/8;
     margin: 0.5rem;
@@ -522,7 +528,16 @@ input {
     max-height: 175px;
   }
 }
+@media screen and (max-width: 670px) {
+  .hebergement img {
+    min-width: 165px;
+    max-height: 130px;
+  }
 
+  .Filtres li {
+    padding: 0rem 0.5rem;
+  }
+}
 @media screen and (max-width: 500px) {
   html {
     font-size: 80%;
@@ -633,7 +648,6 @@ input {
   }
 
   .hebergement .img {
-    height: 100%;
     min-height: 145px;
     display: flex;
     object-fit: contain;
@@ -652,6 +666,17 @@ input {
     border-radius: 0rem;
   }
 
+  .plus-populaire a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .plus-populaire img {
+    height: 145px;
+    max-width: 148px;
+    border-radius: 25px 0px 0px 25px;
+  }
   .activite {
     display: flex;
     flex-direction: column;
