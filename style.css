@@ -5,7 +5,7 @@
 }
 
 @font-face {
-  font-family: "Raleway" sans-serif;
+  font-family: "Raleway", sans-serif;
   src: url(/font/Raleway-Regular.ttf);
 }
 
@@ -14,7 +14,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(8);
+  grid-template-rows: repeat(8 1fr);
 }
 
 nav {
@@ -51,12 +51,16 @@ nav a {
 nav .menu {
   display: flex;
   justify-content: space-between;
-  flex: 1c;
+  flex: 1;
   padding: 0rem 2.5rem;
 }
 nav .S {
   font-weight: bold;
   padding-right: 0rem;
+  padding-top: 1rem;
+}
+nav .menu a {
+  padding-top: 1rem;
 }
 
 nav .menu a:hover {
@@ -481,7 +485,7 @@ input {
   body {
     height: 100vh;
     display: grid;
-    grid-template-columns: 10px 2fr 1fr 10px;
+    /*grid-template-columns: 10px 2fr 1fr 10px;*/
   }
   .hebergement {
     margin: 1rem;
@@ -490,7 +494,6 @@ input {
   }
 
   .hebergement img {
-    max-width: 165px;
     max-height: 130px;
   }
 
@@ -528,7 +531,7 @@ input {
     max-height: 175px;
   }
 }
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 670px) and (orientation: landscape) {
   .hebergement img {
     min-width: 165px;
     max-height: 130px;
@@ -542,6 +545,7 @@ input {
   html {
     font-size: 80%;
   }
+
   .logo {
     flex: 1;
     object-fit: cover;
@@ -575,11 +579,14 @@ input {
     grid-row: 2/3;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem 3rem;
+    padding: 1rem 0rem;
   }
 
   nav .menu2 a {
-    padding: 0rem 2rem;
+    padding: 0rem 3.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid lightgray;
+    font-size: 14px;
   }
   nav .inscrir {
     display: flex;
@@ -591,13 +598,13 @@ input {
 
   nav .menu2 a:hover {
     color: #0065fc;
-    border-top: 2px solid #0065fc;
+    border-bottom: 2px solid #0065fc;
   }
 
   body {
     height: 100vh;
     display: grid;
-    grid-template-columns: 10px 1fr 10px;
+    grid-template-columns: 0px 1fr 0px;
   }
 
   .titre {
@@ -636,7 +643,6 @@ input {
   }
   .hebergement {
     grid-row: 7/8;
-
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
