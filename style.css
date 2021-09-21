@@ -27,6 +27,7 @@ nav {
 }
 .logo {
   flex: 3;
+  padding-top: 1rem;
 }
 
 nav img {
@@ -52,7 +53,7 @@ nav .menu {
   display: flex;
   justify-content: space-between;
   flex: 1;
-  padding: 0rem 2.5rem;
+  padding: 0rem;
 }
 nav .S {
   font-weight: bold;
@@ -61,6 +62,8 @@ nav .S {
 }
 nav .menu a {
   padding-top: 1rem;
+  padding: 1rem 2rem;
+  border-top: 2px solid rgb(255, 255, 255);
 }
 
 nav .menu a:hover {
