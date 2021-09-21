@@ -672,6 +672,8 @@ input {
 
   .hebergement .c1 {
     height: 215px;
+    min-width: 322px;
+    margin-top: 1rem;
   }
 
   .hebergement .img {
@@ -680,9 +682,9 @@ input {
     object-fit: contain;
   }
 
-  .hebergement .c1 {
-    min-width: 322px;
-    margin-top: 1rem;
+  .hebergement .plus {
+    padding-right: 18rem;
+    font-size: 15px;
   }
 
   .plus-populaire {
