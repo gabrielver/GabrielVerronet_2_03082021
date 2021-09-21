@@ -118,7 +118,7 @@ form button {
 input {
   width: 170px;
   height: 40px;
-  border: none;
+  border: solid 0.5px rgb(238, 238, 238);
   display: flex;
 }
 
@@ -168,7 +168,7 @@ input {
   background-color: #deecff;
 }
 
-.Filtres p {
+.Filtres text {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
