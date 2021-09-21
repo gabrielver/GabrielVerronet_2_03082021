@@ -234,13 +234,14 @@ input {
 .hebergement .c1 {
   padding: 0.35rem;
   margin: 1rem;
-  height: 90%;
+  height: 94%;
   background: white;
   border: black;
   border-radius: 25px;
   box-shadow: 2.5px 0px 10px 2.5px rgb(212, 212, 212);
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .hebergement h2 {
@@ -253,7 +254,7 @@ input {
 .hebergement p {
   color: #7a7a7afd;
   font-size: 15px;
-  padding: 0rem 0rem 0rem 0.5rem;
+  padding: 0.25rem 0rem 0rem 0.5rem;
 }
 
 .hebergement a {
@@ -272,6 +273,12 @@ input {
 .hebergement .plus {
   padding-top: 1rem;
   font-weight: bold;
+}
+
+.rating1 {
+  position: absolute;
+  padding-left: 0.4rem;
+  bottom: 10px;
 }
 
 .plus-populaire {
@@ -346,10 +353,6 @@ input {
 .rating {
   position: absolute;
   bottom: 15px;
-}
-
-.rating1 {
-  padding-left: 0.4rem;
 }
 
 .activite {
@@ -651,6 +654,10 @@ input {
     height: 100%;
     background: none;
     margin: 0rem;
+  }
+
+  .hebergement .c1 {
+    height: 215px;
   }
 
   .hebergement .img {
